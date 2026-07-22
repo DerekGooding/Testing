@@ -1,8 +1,8 @@
 using System;
 
-namespace ConsoleApp1
+namespace Calculator.ConsoleApp1
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

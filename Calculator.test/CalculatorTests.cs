@@ -83,8 +83,7 @@ namespace Calculator.test
         private string RunCalculator(string input)
         {
             var originalOut = Console.Out;
-            var sb = new System.Text.StringBuilder();
-            var writer = new System.IO.StringWriter { Encoding = System.Text.Encoding.UTF8 };
+            var writer = new System.IO.StringWriter();
             Console.SetOut(writer);
             
             try
@@ -95,7 +94,7 @@ namespace Calculator.test
                 Console.WriteLine();
                 
                 // Simulate Main() execution
-                var program = new Program();
+                var program = new ConsoleApp1.Program();
                 program.Main(new string[0]);
             }
             catch (Exception ex)
